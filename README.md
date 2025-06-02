@@ -1,10 +1,12 @@
-# SRNet-Datagen - A data generator of SRNet
+# SRNet-Datagen(ko) - A data generator of SRNet in Korean
 
 &nbsp;
 ## Introduction
-This is a data generator of SRNet which is the model described in the paper *Editing Text in the wild*.
+This is a data generator for SRNet, the model described in the paper "Editing Text in the Wild".
 
-Our tensorflow reproducing of SRNet: [https://github.com/youdao-ai/SRNet](https://github.com/youdao-ai/SRNet)
+This implementation is specifically tailored for generating **Korean** text data.
+
+The original SRNet-Datagen : [https://github.com/youdao-ai/SRNet-Datagen?tab=readme-ov-file](https://github.com/youdao-ai/SRNet-Datagen?tab=readme-ov-file)
 
 Original paper: [*Editing Text in the wild*](https://arxiv.org/abs/1908.03047) by Liang Wu, Chengquan Zhang, Jiaming Liu, Junyu Han, Jingtuo Liu, Errui Ding and Xiang Bai.
 
@@ -58,16 +60,21 @@ From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b
 
 &nbsp;
 ## Requirements
-- Python 3.6
 
-- numpy
+```
+python3 -m venv venv
 
-- opencv-python
+source venv/bin/activate
 
-- Augmentor
+pip install -r requirements.txt
+
+python3 datagen.py
+```
 
 &nbsp;
 ## Reference
+- [SRNet-Datagen - A data generator of SRNet](https://github.com/youdao-ai/SRNet-Datagen?tab=readme-ov-file)
+
 - [Editing Text in the Wild](https://arxiv.org/abs/1908.03047)
 
 - [Synthetic Data for Text Localisation in Natural Images](https://arxiv.org/abs/1604.06646)

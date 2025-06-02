@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *.so
 *.pyd
+.python-version
 
 # Dataset outputs (generated data)
 Synthtext/datasets/srnet_data/
