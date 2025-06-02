@@ -50,7 +50,8 @@ def render_normal(font, text):
 
     # initialize the surface to proper size:
     line_bounds = font.get_rect(lines[np.argmax(lengths)])
-    fsize = (round(2.0 * line_bounds.width), round(1.25 * line_spacing * len(lines)))
+    # fsize = (round(2.0 * line_bounds.width), round(1.25 * line_spacing * len(lines)))
+    fsize = (round(2.5 * line_bounds.width), round(2.0 * line_spacing * len(lines)))
     surf = pygame.Surface(fsize, pygame.locals.SRCALPHA, 32)
 
     bbs = []
@@ -80,7 +81,7 @@ def render_normal(font, text):
 
     # crop the surface to fit the text:
     bbs = np.array(bbs)
-    surf_arr, bbs = crop_safe(pygame.surfarray.pixels_alpha(surf), rect_union, bbs, pad=5)
+    surf_arr, bbs = crop_safe(pygame.surfarray.pixels_alpha(surf), rect_union, bbs, pad=100)
     surf_arr = surf_arr.swapaxes(0,1)
     
     #self.visualize_bb(surf_arr,bbs)

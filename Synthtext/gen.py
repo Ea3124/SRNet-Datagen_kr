@@ -76,7 +76,8 @@ class datagen():
             # init font
             font = freetype.Font(font)
             font.antialiased = True
-            font.origin = True
+            # font.origin = True
+            font.origin = False
 
             # choose font style
             font.size = np.random.randint(data_cfg.font_size[0], data_cfg.font_size[1] + 1)

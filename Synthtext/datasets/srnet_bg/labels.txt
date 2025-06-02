@@ -1,0 +1,5 @@
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/1.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/2.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/3.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/4.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/5.jpg

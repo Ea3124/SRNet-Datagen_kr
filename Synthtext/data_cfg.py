@@ -11,8 +11,9 @@ font_size = [25, 60]
 underline_rate = 0.01
 strong_rate = 0.05
 oblique_rate = 0.02
-font_dir = '/reserve/qianyu/datasets/fonts/english_ttf'
-standard_font_path = '/reserve/qianyu/datasets/fonts/english_ttf/arial.ttf'
+font_dir = 'datasets/fonts'
+# standard_font_path = 'datasets/fonts/NanumGothic.ttf'
+standard_font_path = 'datasets/fonts/malgunbd.ttf'
 
 # text
 text_filepath = 'data/texts.txt'
@@ -20,7 +21,7 @@ capitalize_rate = 0.1
 uppercase_rate = 0.04
 
 # background
-bg_filepath = '/reserve/qianyu/datasets/srnet_bg/labels.txt'
+bg_filepath = 'datasets/srnet_bg/labels.txt'
 
 ## background augment
 brightness_rate = 0.8
@@ -51,8 +52,8 @@ elastic_grid_size = 4
 elastic_magnitude = 2
 
 ## colorize
-padding_ud = [0, 10]
-padding_lr = [0, 20]
+padding_ud = [5, 15]
+padding_lr = [5, 25]
 is_border_rate = 0.02
 is_shadow_rate = 0.02
 shadow_angle_degree = [1, 3, 5, 7] # shift for shadow_angle_param

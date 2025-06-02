@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Dataset outputs (generated data)
+Synthtext/datasets/srnet_data/
+
+# If background images are large or temporary
+Synthtext/datasets/srnet_bg/*.jpg
+
+# Log or debug outputs (optional)
+*.log
+*.tmp
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+finalenv/
+
+# OS files
+.DS_Store
+
+# Jupyter notebooks checkpoints (if used)
+.ipynb_checkpoints/

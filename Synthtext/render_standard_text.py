@@ -13,7 +13,8 @@ import cv2
 def render_normal(font, text):
     line_spacing = font.get_sized_height() + 1
     line_bounds = font.get_rect(text)
-    fsize = (round(2.0 * line_bounds.width), round(1.25 * line_spacing))
+    # fsize = (round(2.0 * line_bounds.width), round(1.25 * line_spacing))
+    fsize = (round(5.5 * line_bounds.width), round(2.0 * line_spacing))
     surf = pygame.Surface(fsize, pygame.locals.SRCALPHA, 32)
     x, y = 0, line_spacing
     
