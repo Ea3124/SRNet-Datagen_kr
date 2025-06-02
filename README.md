@@ -62,13 +62,19 @@ From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b
 ## Requirements
 
 ```
+# Create a virtual environment
 python3 -m venv venv
+python -m venv venv # window
 
+# Activate the virtual environment
 source venv/bin/activate
 
+# Install required dependencies
 pip install -r requirements.txt
 
+# Run the data generator
 python3 datagen.py
+python datagen.py # window
 ```
 
 &nbsp;
