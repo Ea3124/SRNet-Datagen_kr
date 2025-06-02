@@ -54,7 +54,7 @@ You can also use this project to generate data online while training SRNet.
 
 - `mask_t`: the binary mask of styled text b
 
-![image](https://github.com/youdao-ai/SRNet/blob/master/examples/example/data.png)
+![image](https://github.com/Ea3124/SRNet-Datagen-ko-/blob/master/example_img.png)
 
 From left to right, from top to bottom are examples of `i_s, i_t, t_sk, t_t, t_b, t_f, mask_t`
 
