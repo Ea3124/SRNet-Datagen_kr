@@ -13,7 +13,7 @@ strong_rate = 0.05
 oblique_rate = 0.02
 font_dir = 'datasets/fonts'
 # standard_font_path = 'datasets/fonts/NanumGothic.ttf'
-standard_font_path = 'datasets/fonts/malgunbd.ttf'
+standard_font_path = 'datasets/fonts/Pretendard-Medium.ttf'
 
 # text
 text_filepath = 'data/texts.txt'
