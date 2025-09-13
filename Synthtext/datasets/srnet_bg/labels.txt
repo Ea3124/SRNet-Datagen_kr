@@ -3,3 +3,8 @@
 /Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/3.jpg
 /Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/4.jpg
 /Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/5.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/6.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/7.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/8.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/9.jpg
+/Users/eaios/Desktop/work/graduation_project/SRNet-Datagen-ko-/Synthtext/datasets/srnet_bg/10.jpg

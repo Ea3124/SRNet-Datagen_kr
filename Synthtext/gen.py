@@ -22,6 +22,7 @@ from . import colorize
 from . import skeletonization
 from . import render_standard_text
 from . import data_cfg
+import pickle as cp
 
 class datagen():
 
@@ -64,6 +65,7 @@ class datagen():
         while True:
             # choose font, text and bg
             font = np.random.choice(self.font_list)
+            font_name = font
             text1, text2 = np.random.choice(self.text_list), np.random.choice(self.text_list)
             
             upper_rand = np.random.rand()
@@ -160,14 +162,22 @@ class datagen():
                         'shadow_opacity': data_cfg.shadow_opacity_param[0] * np.random.randn()
                                           + data_cfg.shadow_opacity_param[1]
                     }
-            _, i_s = colorize.colorize(surf1, t_b, fg_col, bg_col, self.colorsRGB, self.colorsLAB, min_h, param)
+            s_s, i_s = colorize.colorize(surf1, t_b, fg_col, bg_col, self.colorsRGB, self.colorsLAB, min_h, param)
             t_t, t_f = colorize.colorize(surf2, t_b, fg_col, bg_col, self.colorsRGB, self.colorsLAB, min_h, param)
             
+            ha, wa = i_s.shape[:2]
+            if ha * wa < 1000:
+                continue
+
             # skeletonization
             t_sk = skeletonization.skeletonization(surf2, 127)
             break
    
-        return [i_t, i_s, t_sk, t_t, t_b, t_f, surf2]
+        return {"data": [i_t, i_s, t_sk, t_t, t_b, t_f, s_s, surf2, surf1],
+                "is_text": text1,
+                "it_text": text2,
+                "font": font_name
+                }
 
 def enqueue_data(queue, capacity):  
     
@@ -175,11 +185,11 @@ def enqueue_data(queue, capacity):
     gen = datagen()
     while True:
         try:
-            data = gen.gen_srnet_data_with_background()
+            data_dict = gen.gen_srnet_data_with_background()
         except Exception as e:
             pass
         if queue.qsize() < capacity:
-            queue.put(data)
+            queue.put(data_dict)
 
 class multiprocess_datagen():
     
@@ -200,11 +210,11 @@ class multiprocess_datagen():
         self.pool.close()
         
     def dequeue_data(self):
-        
+        np.random.seed()
         while self.queue.empty():
             pass
-        data = self.queue.get()
-        return data
+        data_dict = self.queue.get()
+        return data_dict
         '''
         data = None
         if not self.queue.empty():

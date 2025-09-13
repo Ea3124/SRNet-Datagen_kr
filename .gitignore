@@ -27,3 +27,7 @@ finalenv/
 
 # Jupyter notebooks checkpoints (if used)
 .ipynb_checkpoints/
+
+Synthtext/data/sampled_words.txt
+Synthtext/data/test.py
+Synthtext/datasets/srnet_data.zip
