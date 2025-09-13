@@ -1,4 +1,7 @@
-# SRNet-Datagen(ko) - A data generator of SRNet in Korean
+<h1 align="center"> <em>SRNet-Datagen(ko)
+
+A data generator of SRNet in Korean </em></h1>
+
 
 &nbsp;
 ## Introduction
